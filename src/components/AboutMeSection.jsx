@@ -34,16 +34,10 @@ const AboutMeSection = () => {
 
   return (
     <>
-      <div className="relative bg-gradient-to-t from-[#0F0E47] to-[#251673] min-h-screen flex items-center justify-center py-20 lg:py-40">
+      <div className="relative bg-gradient-to-t from-[#0F0E47] to-[#251673] min-h-screen flex flex-col items-center justify-center py-20 lg:py-20">
         <h2 className="absolute top-10 lg:top-10 left-0 right-0 text-4xl font-bold text-white text-center font-serif">
           About Me
         </h2>
-
-        <img
-          src={image}
-          alt="home"
-          className="absolute bottom-0 right-0 w-40 h-40 md:w-50 md:h-50 lg:w-80 lg:h-80 animate-bounce"
-        />
 
         <div
           ref={aboutRef}
@@ -76,6 +70,15 @@ const AboutMeSection = () => {
             Ketika tidak di depan komputer, saya biasanya bermain gitar,
             berkeliling dengan teman-teman, atau menulis.
           </p>
+        </div>
+
+        {/* Image below the text content for mobile */}
+        <div className="mt-8 w-full flex justify-center lg:absolute lg:bottom-0 lg:right-0 lg:w-auto">
+          <img
+            src={image}
+            alt="home"
+            className="w-full h-auto max-w-xs sm:max-w-md lg:max-w-none lg:w-80 lg:h-80 animate-bounce"
+          />
         </div>
       </div>
     </>
