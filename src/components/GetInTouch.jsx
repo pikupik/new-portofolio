@@ -1,8 +1,7 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import emailjs from "emailjs-com";
-import image from "../assets/about.png";
 
 gsap.registerPlugin(ScrollTrigger);
 

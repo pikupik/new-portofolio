@@ -1,7 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import image from "../assets/home.png";
-import SnowEffect from "./comps/SnowEffect";
 import TechStack from "./comps/TechStack";
 
 const HomeSection = () => {
@@ -74,8 +73,6 @@ const HomeSection = () => {
     >
       <div className="absolute inset-0 bg-[url('/api/placeholder/1920/1080')] bg-cover bg-center mix-blend-overlay"></div>
 
-      <SnowEffect />
-
       <img
         src={image}
         alt="home"
@@ -87,10 +84,10 @@ const HomeSection = () => {
         </h1>
 
         <div className="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-18">
-          <p className="absolute w-full font-updock" ref={backendRef}>
+          <p className="absolute w-full" ref={backendRef}>
             Specialist
           </p>
-          <p className="absolute w-full font-updock" ref={developerRef}>
+          <p className="absolute w-full" ref={developerRef}>
             Backend Developer
           </p>
         </div>
