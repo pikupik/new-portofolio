@@ -23,8 +23,7 @@ const projects = [
   {
     id: 3,
     title: "User Auth API Free",
-    description:
-      "This is a RESTful API for user authentication using JWT (JSON Web Token). The API provides routes for user registration and login, ensuring a simple and secure way to manage user authentication, which can be consumed by any external application.",
+    description: "Restfull API user auth free. use it try it",
     link: "https://github.com/pikupik/userauthapi",
     image: "/api.jpg", // Replace with your actual image path
   },
