@@ -1,7 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import emailjs from "emailjs-com";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,10 +11,7 @@ const GetInTouch = () => {
   useEffect(() => {
     gsap.fromTo(
       formRef.current,
-      {
-        opacity: 0,
-        y: 50,
-      },
+      { opacity: 0, y: 50 },
       {
         opacity: 1,
         y: 0,
@@ -28,31 +24,20 @@ const GetInTouch = () => {
           toggleActions: "play none none reset",
           markers: false,
         },
-      }
+      },
     );
   }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_ygaalxw",
-        "template_c6jk9tr",
-        e.target,
-        "qxJGL8kMZAW-cztJE"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSuccessMessage("Your message has been sent!");
-        },
-        (error) => {
-          console.log(error.text);
-          setSuccessMessage("Failed to send your message, please try again.");
-        }
-      );
+    const email = e.target.from_name.value;
+    const message = e.target.message.value;
 
+    const mailtoLink = `mailto:santuyaja51@email.com?subject=Message from ${encodeURIComponent(email)}&body=${encodeURIComponent(message)}`;
+    window.open(mailtoLink, "_blank");
+
+    setSuccessMessage("Email client opened! Please send the email.");
     e.target.reset();
   };
 

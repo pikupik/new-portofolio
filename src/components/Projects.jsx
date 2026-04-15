@@ -11,21 +11,28 @@ const projects = [
     description:
       "Aplikasi Restoran Online. Lengkap dengan payment gateway dan Admin Dashboard.",
     link: "https://restaurant-nine-gold.vercel.app/",
-    image: "/resto.jpg", // Replace with your actual image path
+    image: "/resto.jpg",
   },
   {
     id: 2,
-    title: "Quran Online",
-    description: "Aplikasi Quran Online. Lengkap",
-    link: "https://quran-pages.vercel.app/",
-    image: "/quran.jpg", // Replace with your actual image path
+    title: "Company Profile",
+    description: "Company Profile Clean",
+    link: "https://company-profile-six-tau.vercel.app/",
+    image: "/compro.png",
   },
   {
     id: 3,
-    title: "User Auth API Free",
-    description: "Restfull API user auth free. use it try it",
-    link: "https://github.com/pikupik/userauthapi",
-    image: "/api.jpg", // Replace with your actual image path
+    title: "Web Toko",
+    description: "Web Toko Simple Crud With Admin System",
+    link: "https://webtoko-henna.vercel.app/",
+    image: "/toko.png",
+  },
+  {
+    id: 4,
+    title: "Undangan Pernikahan",
+    description: "Undangan Pernikahan Digital",
+    link: "https://undangan-pernikahan-gamma.vercel.app/",
+    image: "/undangan.png",
   },
 ];
 
@@ -51,7 +58,7 @@ const Projects = () => {
             toggleActions: "play none none reset",
             markers: false,
           },
-        }
+        },
       );
     });
   }, []);
