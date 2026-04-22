@@ -34,6 +34,13 @@ const projects = [
     link: "https://undangan-pernikahan-gamma.vercel.app/",
     image: "/undangan.png",
   },
+  {
+    id: 5,
+    title: "Point Of Sale",
+    description: "Sistem Point Of Sale untuk toko",
+    link: "https://pickpos.vercel.app/",
+    image: "/pos.png",
+  },
 ];
 
 const Projects = () => {
