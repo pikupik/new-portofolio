@@ -41,6 +41,13 @@ const projects = [
     link: "https://pickpos.vercel.app/",
     image: "/pos.png",
   },
+  {
+    id: 6,
+    title: "Company Profile 2",
+    description: "Company Profile Clean",
+    link: "https://example-company.vercel.app/",
+    image: "/compro2.png",
+  },
 ];
 
 const Projects = () => {
